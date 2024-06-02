@@ -68,7 +68,7 @@ shift varchar(20)
 
 insert into KARYAWAN (id_karyawan, username, nama_lengkap, gender, peran, gaji_per_bulan, nomer_hp, nik)
 value
-('KA0001', 'Ngunawan01', 'Nathan Gunawan', 'P', 'Manager', 10000000,'08123456789', '15928379832', 'Evening'),
+('KA0001', 'Admin', 'Administrator', 'P', 'Manager', 10000000,'08123456789', '15928379832', 'Evening'),
 ('KA0002', 'JNugroho01', 'Josephine Nugroho', 'L', 'Kasir', '10000000', '0815766498', '273478942380', 'Morning')
 ;
 
@@ -80,7 +80,7 @@ id_karyawan varchar(8) references karyawan(id_karyawan)
 
 insert into USERDATA(username, pasword, id_karyawan) 
 value 
-('Ngunawan01', 'abcd1234' , 'KA0001'),
+('Admin', 'admin' , 'KA0001'),
 ('JNugroho01', 'bcde2345', 'KA0002');
 
 create table EXPENSE (
